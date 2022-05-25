@@ -109,5 +109,3 @@ while is_on:
             cost = int(MENU[user_choice]["cost"])
             collect_coins(cost)
             inventory_reducer(user_choice)
-        # elif not check_resources(user_choice) and user_choice != "report":
-        #     print(f"Sorry there are not enough resources.")
