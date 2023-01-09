@@ -1,6 +1,6 @@
 import random
 
-import colorgram
+# import colorgram
 
 # rgb_colors = []
 # colors = colorgram.extract('image.jpg', 30)
@@ -21,13 +21,14 @@ color_list = [(149, 75, 50), (222, 201, 136), (53, 93, 123), (170, 154, 41), (13
 import turtle as t
 
 timmy = t.Turtle()
-print(timmy.pos())
 timmy.speed(0)
-screen = t.Screen()
-screen.reset()
-screen.screensize(canvheight=10, canvwidth=10)
-print(screen.screensize())
+# screen = t.Screen()
+# screen.reset()
+# screen.screensize(canvheight=10, canvwidth=10)
+# print(screen.screensize())
 t.colormode(255)
+timmy.penup()
+timmy.setposition(-500,-500)
 
 def draw_dot_row():
     for i in range(10):
@@ -36,9 +37,9 @@ def draw_dot_row():
         timmy.dot(20, rand_color)
         timmy.fd(50)
 
-pos = 0
+pos = -500
 
-for i in range(10):
+for i in range(20):
     draw_dot_row()
-    pos += 25
-    timmy.setposition(0, pos)
+    pos += 50
+    timmy.setposition(-500, pos)

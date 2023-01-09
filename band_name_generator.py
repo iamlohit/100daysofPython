@@ -1,5 +1,5 @@
 #1. Create a greeting for your program.
-print("Hi there, let me help you pick a band name real quick\n")
+print("Hi there, let me help you pick a name for your band real quick\n")
 #2. Ask the user for the city that they grew up in.
 city = input("Which city did you grow up in?\n")
 #3. Ask the user for the name of a pet.
