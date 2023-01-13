@@ -4,14 +4,24 @@ year = int(input("Which year do you want to check? "))
 
 #Write your code below this line 👇
 
-#print(year % 4)
-#print((year % 100) % 2)
-#print((year % 400) % 2)
-
+""" There can be many ways to do this"""
 if (year % 4) == 0:
     if ((year % 100) % 2) != 0:
         print("Leap year.")        
     elif ((year % 100) % 2) == 0 and ((year % 400) % 2) == 0:
         print("Leap year.")
+else:
+    print("Not leap year.")
+
+''' The simpler way would be '''
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year.")
+        else:
+            print("Not leap year.")
+    else:
+        print("Not leap year.")
 else:
     print("Not leap year.")
