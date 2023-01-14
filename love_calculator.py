@@ -6,31 +6,26 @@ name2 = input("What is their name? \n")
 
 #Write your code below this line 👇
 
-name = name1 + name2
+combined_name = name1.lower() + name2.lower()
+score1 = 0
+t = combined_name.count("t")
+r = combined_name.count("r")
+u = combined_name.count("u")
+e = combined_name.count("e")
+score1 = str(t + r + u + e)
 
-lower_name = name.lower()
+score2 = 0
+l = combined_name.count("l")
+o = combined_name.count("o")
+v = combined_name.count("v")
+e = combined_name.count("e")
+score2 = str(l + o + v + e)
 
-T = lower_name.count("t")
-R = lower_name.count("r")
-U = lower_name.count("u")
-E = lower_name.count("e")
+total_score = int(score1 + score2)
 
-TRUE = T + R + U + E
-
-L = lower_name.count("l")
-O = lower_name.count("o")
-V = lower_name.count("v")
-E = lower_name.count("e")
-
-LOVE = L + O + V + E
-
-TRUE_LOVE = (str(TRUE)+str(LOVE))
-
-TRUE_LOVE = int(TRUE_LOVE)
-
-if TRUE_LOVE <= 10 or TRUE_LOVE >= 90:
-    print(f"Your score is {TRUE_LOVE}, you go together like coke and mentos.")
-elif TRUE_LOVE >= 40 and  TRUE_LOVE <= 50:
-    print(f"Your score is {TRUE_LOVE}, you are alright together.")
+if total_score < 10 or total_score > 90:
+    print(f"Your score is {total_score}, you go together like coke and mentos.")
+elif total_score >= 40 and total_score <= 50:
+    print(f"Your score is {total_score}, you are alright together.")
 else:
-    print(f"Your score is {TRUE_LOVE}.")
+    print(f"Your score is {total_score}.")
