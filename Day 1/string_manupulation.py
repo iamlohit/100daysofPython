@@ -8,7 +8,7 @@ print("Hello" + " " + "World")
 print("Hello " + "World")
 
 #Indentation is key in Python
- print("Hello " + "World")
+print("Hello " + "World")
 
 # Note: You see we added a space or indent
 # on the 3rd print statement
